@@ -13,7 +13,6 @@ with open("/Users/lucasb/Documents/Diatraea_project/prot_filtered2.gff", "r") as
         info = info.split(";")
         identity = info[4][17:]
         prot_id = info[1][9:-1]
-##de onde vem esses NP_ ?
         if prot_id in id_dict.keys():
             if identity not in id_dict.values():
                 id_dict[prot_id].append(identity)
